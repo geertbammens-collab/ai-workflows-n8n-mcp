@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Concepten - AI Workflows</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav><div class="nav-inner"><a href="index.html" class="logo">AI Workflows</a><button class="hamburger" onclick="document.querySelector('.nav-links').classList.toggle('open')"><span></span><span></span><span></span></button><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="craft-agents.html">Craft Agents</a></li><li><a href="concepten.html" class="active">Concepten</a></li><li><a href="hands-on.html">Hands-on</a></li><li><a href="resources.html">Resources</a></li></ul></div></nav>
+<section class="hero" style="padding:4rem 2rem 3rem;background:var(--gradient-2)"><h1>Key Concepts</h1><p>De vier kernbegrippen die je overal in Craft Agents tegenkomt, plus de voorbereide n8n workspace.</p></section>
+<div class="container">
+  <h2 class="section-title">Vier <span class="highlight">kernbegrippen</span></h2>
+  <p class="section-subtitle">Voordat we aan de slag gaan, is het nuttig om deze vier concepten te kennen.</p>
+  <div class="feature-grid">
+    <div class="feature-card"><div class="icon">&#128193;</div><h3>Workspaces</h3><p>Een projectcontainer. Je kunt het vergelijken met een map op je bureaublad: alles wat bij een bepaald project hoort, leeft binnen die workspace.</p></div>
+    <div class="feature-card"><div class="icon">&#128194;</div><h3>Working Directory</h3><p>De werkmap op je computer waar je projectbestanden staan. Craft Agents kan die bestanden lezen, doorzoeken en aanpassen.</p></div>
+    <div class="feature-card"><div class="icon">&#128268;</div><h3>Sources</h3><p>Externe verbindingen die Craft Agents extra mogelijkheden geven. Via API's en MCP kan de AI communiceren met diensten buiten je computer, zoals n8n.</p></div>
+    <div class="feature-card"><div class="icon">&#129513;</div><h3>Skills</h3><p>Vooraf gedefinieerde instructies die de AI vertellen hoe een bepaalde taak moet worden aangepakt. Denk aan een receptenboek voor de AI.</p></div>
+  </div>
+  <h2 class="section-title" style="margin-top:3rem">De voorbereide <span class="highlight">n8n Workspace</span></h2>
+  <div class="card"><p>Om de leercurve zo laag mogelijk te houden, werk je met een workspace die de trainer heeft klaargezet. Die workspace bevat alles wat je nodig hebt om Craft Agents en n8n naadloos samen te laten werken.</p></div>
+  <h3 style="margin:2rem 0 1rem;font-size:1.3rem">Drie MCP-servers</h3>
+  <div class="steps">
+    <div class="step"><h3>n8n Documentatie Server</h3><p>Geeft de AI toegang tot de documentatie van alle n8n nodes, zodat die precies weet welke parameters een node verwacht en hoe die geconfigureerd moet worden.</p></div>
+    <div class="step"><h3>Template Library Server</h3><p>Maakt het mogelijk om te zoeken in de n8n template library, een verzameling van kant-en-klare voorbeeldworkflows.</p></div>
+    <div class="step"><h3>n8n Cloud Server</h3><p>Verbindt rechtstreeks met jouw n8n cloud account en stelt de AI in staat om workflows op te vragen, aan te maken, te wijzigen en te testen.</p></div>
+  </div>
+  <div class="card" style="margin-top:2rem"><h3>Ingebouwde Skills</h3><p>Daarnaast bevat de workspace een reeks skills voor veelvoorkomende taken: het bouwen van een workflow op basis van een beschrijving, het troubleshooten van fouten, het toevoegen van error handling en meer.</p></div>
+  <div class="tip"><strong>Belangrijk:</strong> Zonder die voorbereide workspace zou je de AI elke keer opnieuw moeten vertellen wat n8n is, hoe nodes werken en hoe de API is opgebouwd. Met de workspace beschikt de AI over alle context die nodig is om je verzoeken snel en correct uit te voeren.</div>
+</div>
+<footer><ul class="footer-nav"><li><a href="index.html">Home</a></li><li><a href="craft-agents.html">Craft Agents</a></li><li><a href="concepten.html">Concepten</a></li><li><a href="hands-on.html">Hands-on</a></li><li><a href="resources.html">Resources</a></li></ul><p>&copy; 2025 Steff Vanhaverbeke. Alle rechten voorbehouden.</p></footer>
+</body>
+</html>
